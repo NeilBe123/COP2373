@@ -20,8 +20,10 @@ def main():
     ]
 
     for product in products:
-        price = product["price"]
-        discount_rate = product["discount_rate"]
+        #price and discount_rate variables needed int and float applied to them respectively
+        #This enables their values to be subtracted and multiplied.
+        price = int(product["price"])
+        discount_rate = float(product["discount_rate"])
         
         discount_amount = calculate_discount(price, discount_rate)
         final_price = apply_discount(price, discount_amount)
