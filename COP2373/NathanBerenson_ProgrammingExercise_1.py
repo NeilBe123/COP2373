@@ -6,7 +6,7 @@ def selling_tickets():
     ticket_amount = 10
 
 #This variable starts out the number of buyers
-    buyer = 0
+    customer = 0
 
 #The while function only runs until ticket_amount runs out
     while 0 < ticket_amount <= 10:
@@ -24,7 +24,7 @@ def selling_tickets():
             ticket_amount -= ticket
 
             #Adds to buyer count with '+='
-            buyer += 1
+            customer += 1
 
             #Lets the user know how many tickets are still available
             print(f"There are {ticket_amount} tickets remaining")
@@ -34,15 +34,15 @@ def selling_tickets():
         print("All the tickets have been sold")
 
     #Returns the accumulator function 'buyers' to be used in a new function
-    return buyer
+    return customer
 
 #This function runs the previous function and prints out the amount of buyers
 def buyers():
 
     #Receives the buyer variable from the function and transfers it into this new function
-    buyer = selling_tickets()
+    customer = selling_tickets()
 
-    print(f"There are {buyer} buyers")
+    print(f"There are {customer} buyers")
 
 #Activates the buyers() function
 buyers()
