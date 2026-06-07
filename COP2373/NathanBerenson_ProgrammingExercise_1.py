@@ -3,7 +3,7 @@
 def selling_tickets():
 
 #This variable starts out the amount of tickets needed
-    ticket_amount = 20
+    ticket_amount = 10
 
 #This variable starts out the number of buyers
     buyer = 0
