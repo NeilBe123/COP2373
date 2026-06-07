@@ -9,10 +9,10 @@ def selling_tickets():
     buyer = 0
 
 #The while function only runs until ticket_amount runs out
-    while 0 < ticket_amount <= 20:
+    while 0 < ticket_amount <= 10:
 
     #This input asks the user for how many tickets they want and converts it into an integer with 'int'
-        ticket = int(input("How many tickets would you like to purchase?: "))
+        ticket = int(input("How many tickets would you like?: "))
 
     #Uses an if statement to prevent the user from buying more than one ticket
         if ticket > 4:
