@@ -39,7 +39,7 @@ def info_sort():
     lowest = min(list_of_lists, key = lambda x:x)
     
     #prints out the expenses and their prices
-    print(f"{list_of_lists}"
+    print(f"All Expenses: {list_of_lists}"
         f"\nTotal Cost: {sum_result}"
         f"\nHighest expense cost and type: {highest}"
         f"\nLowest expense cost and type: {lowest}")
