@@ -3,7 +3,7 @@ from functools import reduce
 #The user inputs their monthly expenses here
 def info_input():
     #Asks the user for how many expenses
-    ask_for_expense = int(input("How many expenses do you have?: "))
+    ask_for_expense = int(input("How many monthly expenses do you have?: "))
     
     #A list for the type and cost of the expense is created
     expense_type_list = []
@@ -14,7 +14,7 @@ def info_input():
             
             #asks for which expense they are putting the price for, and the expense price
             expense_type = input("What is your expense: ")
-            expense_amount = float(input("How much is your expense: "))
+            expense_amount = float(input("How much is your expense: $ "))
 
             #appends the lists for later use
             expense_type_list.append(f"{expense_type}")
